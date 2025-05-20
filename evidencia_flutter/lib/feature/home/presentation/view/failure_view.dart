@@ -8,13 +8,14 @@ class Failure extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            Text('failure')
-          ],
-        ),
-      ),
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.asset('assets/Fondo_loading.png', fit: BoxFit.cover),
+          Image.asset('assets/error.png'),
+        ],
+    )
     );
+
   }
 }
