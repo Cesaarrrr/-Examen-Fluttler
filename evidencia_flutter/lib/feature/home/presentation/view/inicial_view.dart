@@ -1,4 +1,6 @@
+import 'package:evidencia_flutter/feature/bloc/home_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Inicial extends StatelessWidget {
   const Inicial({
@@ -24,7 +26,8 @@ class Inicial extends StatelessWidget {
               padding: EdgeInsets.only(bottom: 30),
               child: InkWell(
                 onTap: () {
-                  print('Botón tocado');
+                  final homeBloc = BlocProvider.of<HomeBloc>(context);
+                      homeBloc.add(HomeSearchPressed());
                 },
                 child: Image.asset('assets/xd.png'),
               ),
