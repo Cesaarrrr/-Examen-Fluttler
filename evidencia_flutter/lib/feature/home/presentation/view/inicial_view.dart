@@ -18,7 +18,7 @@ class Inicial extends StatelessWidget {
             top: 300,
             left: 0,
             right: 0,
-            child: Image.asset('assets/Boton.png'),
+            child: Image.asset('assets/xd.png'),
           ),
           Align(
             alignment: Alignment.bottomCenter,
@@ -29,7 +29,7 @@ class Inicial extends StatelessWidget {
                   final homeBloc = BlocProvider.of<HomeBloc>(context);
                       homeBloc.add(HomeSearchPressed());
                 },
-                child: Image.asset('assets/xd.png'),
+                child: Image.asset('assets/Boton.png'),
               ),
             ),
           ),

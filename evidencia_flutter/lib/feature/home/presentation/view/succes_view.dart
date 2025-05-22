@@ -50,10 +50,9 @@ Widget cardSimple(String imagen, String texto) {
   return Column(
     children: [
       Container(
-        width: 100,
-        height: 100,
+        width: 150,
+        height: 150,
         decoration: BoxDecoration(
-          border: Border.all(),
           image: DecorationImage(
             image: AssetImage(imagen),
             fit: BoxFit.cover,
